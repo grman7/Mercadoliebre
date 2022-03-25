@@ -1,0 +1,284 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 15px;
+}
+
+div.top-header {
+  display: flex;
+  align-items: center;
+  padding: 5%;
+}
+
+header div.top-header p {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+header {
+  background-color: #eac926;
+}
+
+header div.logo,
+header .form {
+  width: 70%;
+}
+
+header div.logo {
+  padding: 10px;
+}
+
+header .form {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  font-size: 11px;
+  justify-content: flex-end;
+}
+
+header nav {
+  font-size: 12px;
+  margin-left: 20px;
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+header ul li {
+  list-style-type: none;
+  padding: 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+header .form .input {
+  background-color: #fff;
+  border: 1px solid #000;
+  outline: none;
+  color: #666;
+  padding: 2px;
+}
+header .form .submit {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #666;
+  width: 10%;
+}
+
+div.burger-menu {
+  text-align: center;
+  width: 50%;
+}
+div.burger-menu i {
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+  width: 40px;
+}
+
+.main-article {
+  border-top: 1px solid #ebebeb;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 18px;
+}
+
+.discount,
+.description {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+h3,
+.description {
+  color: #666;
+}
+.description {
+  display: none;
+  margin-top: 20px;
+}
+
+section.banner img {
+  width: 100%;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main section article {
+  background-color: #fff;
+  margin: 10px 0px;
+}
+
+main section article img {
+  width: 100%;
+}
+main section article i,
+.discount {
+  color: #26b54a;
+}
+
+main section article i {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+main section div.products article i {
+  transition: transform 2s;
+}
+
+main section div.products article:hover i {
+  transform: rotate(-90deg);
+}
+
+main section h3 {
+  margin: 20px 0px;
+}
+
+article div.main-article {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  border-top: 1px solid #ebebeb;
+  position: relative;
+  padding: 15px;
+}
+
+footer {
+  color: #000000;
+  padding: 5px;
+  font-size: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.lala {
+  display: flex;
+  padding: 5px;
+  width: 10%;
+  height: 30px;
+}
+.lala1 {
+  display: flex;
+  padding: 5px;
+  width: 10%;
+  height: 100px;
+}
+.lala2 {
+  display: flex;
+  padding: 5px;
+  width: 10%;
+  height: 30px;
+}
+.lala3 {
+  text-align: center;
+  width: 100%;
+}
+.fas fa-credit-card {
+  align-items: center;
+}
+
+/*register*/
+.registro {
+  font-size: 20px;
+  text-align: center;
+  margin: 15px;
+  padding: 5%;
+  border-radius: 10px;
+  background-color: #ebebeb;
+  width: 100%;
+}
+
+.button {
+  margin: 10px;
+  padding: 1% 2%;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  background-color: #07adee;
+  border: 1px solid #000000;
+}
+
+main section article:hover {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+main section article:hover .description {
+  display: block;
+}
+
+/*dispositivos desde 316px*/
+@media (min-width: 361px) {
+  main section article .description {
+    display: block;
+  }
+
+  main section div.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  main section div.products article {
+    width: 45%;
+  }
+
+  .price {
+    width: 60%;
+  }
+
+  .discount {
+    width: 45%;
+  }
+  div.burger-menu {
+    display: none;
+  }
+}
+
+/*dispositivos desde 769px*/
+@media (min-width: 769px) {
+  main section div.products article {
+    width: 22%;
+  }
+}
