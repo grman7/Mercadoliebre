@@ -187,38 +187,91 @@ article div.main-article {
 }
 
 footer {
-  color: #000000;
-  padding: 5px;
-  font-size: 15px;
-  display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+  background: #ebebeb;
+  color: #000;
+}
+
+.container-footerall {
+  width: 100%;
+  margin: auto;
   justify-content: space-around;
+}
+
+.container-body {
+  display: flex;
 }
 
 .lala {
   display: flex;
   padding: 5px;
-  width: 10%;
+  width: 33%;
   height: 30px;
+  margin-top: 15px;
+  flex-direction: column;
+  text-align: center;
 }
+
+.lala h1 {
+  font-size: 15px;
+}
+.lala p {
+  font-size: 14px;
+}
+
 .lala1 {
   display: flex;
   padding: 5px;
-  width: 10%;
+  width: 33%;
   height: 100px;
+  margin-top: 15px;
+  flex-direction: column;
+  text-align: center;
 }
+.lala1 h1 {
+  font-size: 15px;
+}
+.lala1 p {
+  font-size: 14px;
+}
+
 .lala2 {
   display: flex;
   padding: 5px;
-  width: 10%;
+  width: 33%;
   height: 30px;
-}
-.lala3 {
+  margin-top: 15px;
+  flex-direction: column;
   text-align: center;
-  width: 100%;
 }
-.fas fa-credit-card {
-  align-items: center;
+.lala2 h1 {
+  font-size: 15px;
+}
+.lala2 p {
+  font-size: 14px;
+}
+
+.container-footer {
+  width: 100%;
+  background: #ebebeb;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.copyrigth {
+  color: #c7c7c7;
+}
+
+.copyrigth a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.information {
+  text-decoration: none;
+  color: white;
 }
 
 /*register*/
