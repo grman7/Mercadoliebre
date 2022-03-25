@@ -14,6 +14,6 @@ app.get("/login",(req,res)=> {
     res.sendFile(__dirname + "/views/login.html");
 });
 
-app.listen (3020,()=> {
+app.listen (PORT,()=> {
     console.log("Servidor online");
 });
